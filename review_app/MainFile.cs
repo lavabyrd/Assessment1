@@ -1,11 +1,13 @@
 ﻿using System;
 
 
-
+// main file namespace
 namespace review_app
 {
+	// create a class that will be ran when we start this script
 	class MainFile
 	{
+		// Create the standard header that will run at the start and also on each problem selection
 		public static void Header()
 		{
 			// Print the welcome message
@@ -17,9 +19,10 @@ namespace review_app
 		static void Main(string[] args)
 		{
 
-			//Print a menu
+			// Print a menu for the user with the header
 			Header();
 
+			// create an empty string for the user entry
 			string entry;
 			do
 			{
@@ -37,7 +40,7 @@ namespace review_app
 
 				Console.Write("Please select (1,2,3 or E): ");
 
-				//get a selection from the user
+				// take the user selection and run an additional class based on it
 				entry = Console.ReadLine();
 
 				if (entry.ToString() == "1")
@@ -57,14 +60,14 @@ namespace review_app
 				}
 				else 
 				{
+					// if the user does not select a valid selection, return this message
 					Console.WriteLine("Please entry a valid selection");
 				}
 
 			} 
+
+			// if the entry is E or e, exit the loop
 			while (entry.ToLower() != "e");
-
-
-
 
 
 		} 
