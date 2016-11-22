@@ -1,11 +1,15 @@
 ﻿using System;
 
-namespace Problem_1
+namespace review_app
 {
-	class Program
+	class Problem_3
 	{
-		public static void Main(string[] args)
+		public static void Prob3()
 		{
+
+			// Print the welcome message
+			review_app.MainFile.Header();
+
 			// Declare empty variable for username values
 			int[] values = new int[10];
 			// Declare zero value variable for invalid entries by user
@@ -14,13 +18,8 @@ namespace Problem_1
 			int sum = 0;
 			int average = 0;
 
-			// Print the welcome message including the line breaks at the end
-			Console.WriteLine("##################################");
-			Console.WriteLine("WELCOME TO THE DBS CONSOLE");
-			Console.WriteLine("##################################\n\n");
-
 			// Print Query to user
-			Console.WriteLine("Read 10 numbers and calculate sum and average:");
+			Console.WriteLine("\nRead 10 numbers and calculate sum and average:");
 			Console.WriteLine("----------------------------------------------\n");
 			Console.WriteLine("Input the 10 numbers :");
 
@@ -43,6 +42,7 @@ namespace Problem_1
 			// Take the sum, divide by 10 and display the output
 			average = sum / 10;
 			Console.WriteLine("The Average is : {0}", average);
+			Console.WriteLine("\nReturning to the Main Menu...\n");
 		}
 	}
 }
